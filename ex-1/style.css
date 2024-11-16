@@ -1,1 +1,44 @@
 /* Start coding here */
+
+/* กำหนดรูปแบบพื้นฐาน */
+body {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* ส่วน header */
+.header {
+    background-color: #B8C6D9;  /* สีพื้นหลังตามภาพ */
+    padding: 20px 40px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #2B3A55;  /* สีข้อความ */
+}
+
+/* ส่วนเนื้อหาหลัก */
+.main-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  /* ระยะห่างระหว่างบทความ */
+}
+
+/* แต่ละบทความ */
+.blog-post {
+    border: 1px solid #2B3A55;
+    padding: 20px;
+    max-width: 600px;  /* จำกัดความกว้าง */
+}
+
+.image-placeholder {
+    width: 85%;
+    height: 200px;  /* ปรับความสูงตามต้องการ */
+    background-color: #f0f0f0;
+    margin: 15px 0;
+    /* สร้างเส้นกากบาทด้วย background */
+    background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+                     linear-gradient(-45deg, #ccc 25%, transparent 25%);
+    background-size: 20px 20px;
+}
